@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Haitham Sharlie - Front-End Developer and UI/UX Designer. Building responsive, user-friendly, and visually appealing websites to solve problems and enhance user interactions.">
+  <meta name="keywords" content="Haitham Sharlie, Front-End Developer, UI/UX Designer, Web Development, Responsive Design, Modern Websites">
+  <meta name="author" content="Haitham Sharlie">
+  <meta property="og:title" content="Haitham Sharlie's Portfolio">
+  <meta property="og:description" content="Explore Haitham Sharlie's web development projects and UI/UX skills.">
+  <meta property="og:image" content="icon.ico">
+  <meta property="og:image" content="icon.webp">
+  <meta property="og:image" content="icon.png">
+  <meta property="og:image" content="icon.jpg">
+  <meta property="og:url" content="https://haitham-sharlie.github.io/my-portfolio/">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <link rel="icon" type="image/x-icon" href="icon.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Haitham Sharlie",
+    "jobTitle": "Front-End Developer",
+    "url": "https://haitham-sharlie.github.io/my-portfolio/",
+    "sameAs": [
+      "https://github.com/haitham-sharlie",
+      "https://www.linkedin.com/in/haitham-sharlie-880216240"
+    ]
+  }
+  </script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <title>Haitham Sharlie | Front-End Developer | Web Designer | UI/UX Designer </title>
+  
+  <style>
+    :root {
+      --mainColor: #2563EB;
+      --color: #fff;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+    }
+    
+    .bg-color {
+      background-color: #2563EB ;
+    }
+    
+    .text-color {
+      color: #2563EB ;
+    }
+    
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      color: var(--color);
+      font-weight: 500;
+      padding: .5rem .7rem;
+      border-radius: 5px;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      background-color: var(--color);
+      color: var(--mainColor);
+    }
+    
+    .logo {
+      width: 8.5rem;
+      padding: 2rem 1rem 1rem;
+    }
+    
+    .logo .horizontal-line {
+      position: relative;
+      height: .4rem;
+      background-color: var(--color);
+    }
+    
+    .logo .vertical-line {
+      width: .4rem;
+      height: .8rem;
+      background-color: var(--color);
+      position: absolute;
+      top: -.75rem;
+    }
+    
+    .logo .v-line-1 {
+      right: 40%;
+    }
+    
+    .logo .v-line-2 {
+      right: 60%;
+    }
+    
+    .logo .circle {
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      border: .3rem solid var(--color);
+      background-color: var(--mainColor);
+      position: absolute;
+    }
+    
+    .logo .circle-1 {
+      right: -12%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .logo .circle-2 {
+      right: -1%;
+      top: 50%;
+      transform: translateY(-100%);
+    }
+    
+    .logo .circle-3 {
+      right: -1%;
+      top: -100%;
+      transform: translateY(50%);
+    }
+    
+    .logo .circle-4 {
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .logo .dot {
+      background-color: var(--color);
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      position: absolute;
+    }
+    
+    .logo .dot-1 {
+      right: 35%;
+      top: .6rem;
+    }
+    
+    .logo .dot-2 {
+      right: 45%;
+      top: .6rem;
+    }
+    
+    .logo .dot-3 {
+      right: 55%;
+      top: -1.5rem;
+    }
+    
+    .logo .dot-4 {
+      right: 65%;
+      top: -1.5rem;
+    }
+    
+    .logo .dot-5 {
+      right: 60%;
+      top: -2rem;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  
+  
+</head>
+
+<body style="padding-top:4.4rem;">
+  <header>
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 z-3 bg-color">
+      <div class="container-fluid align-items-center">
+        <div class="logo navbar-brand">
+          <div class="horizontal-line">
+            <div class="vertical-line v-line-1"></div>
+            <div class="vertical-line v-line-2"></div>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            <div class="dot dot-4"></div>
+            <div class="dot dot-5"></div>
+          </div>
+        </div>
+        <button class="navbar-toggler bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" aria-current="page" href="#home">home</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="#skills">skills</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="#contacts">contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="vh-100 d-flex flex-column  bg-dark pt-5 ps-5" id="home" style="background:url(profile.webp) fixed center no-repeat;
+  background-size: cover;">
+    <h2 class="text-color fs-5 lh-base">Welcome! I'm Haitham Sharlie <br><span class="fs-1">Front-End Developer | Web
+        Designer</span><br> I design and develop websites</h2>
+    
+    <a href="#projects" class="btn btn-primary bg-color fs-6 fw-bold d-block p-2 mt-5" style="width:12rem" title="Explore my web development projects">Explore
+      My Work</a>
+    
+    <div class="mt-4 fs-3">
+      <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-black ms-2"></a>
+      <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-black ms-2"></a>
+      <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-black ms-2"></a>
+      <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="freelanceyard  ms-2">
+        <img src="logo-no-text.png" alt="freelanceyard" width="40px">
+      </a>
+    </div>
+  </section>
+  
+  <section class="container" id="about">
+    <h2 class="display-4 fw-bold text-color text-center p-5">About Me</h2>
+    <p class="fs-4 lh-base">Hello! I'm <strong>Haitham Sharlie</strong>, a passionate Front-End Developer and UI/UX
+      Designer. I specialize in building modern, responsive websites that provide seamless user experiences.<br><br>
+      I have a strong background in HTML, CSS, and JavaScript, and I’m skilled in creating user-centered designs that
+      combine functionality with creativity.<br><br>
+      With hands-on experience in projects like e-commerce platforms, business websites, and digital portfolios, I bring
+      your ideas to life with precision and attention to detail.<br><br>
+      My mission is to deliver visually appealing websites that align with client goals and solve real-world
+      problems.<br><br>
+      When I’m not coding, I’m constantly learning new tools and technologies to stay ahead in the ever-evolving web
+      development field.</p>
+    <a href="#contacts" class="fs-3 page-link text-color mt-5 mb-5">Ready to collaborate? Let’s connect!</a>
+  </section>
+  
+  <section class="container-fluid p-5" id="skills" style="background:#f9f9f9">
+    <h2 class="display-4 fw-bold text-color text-center p-5">My Skills</h2>
+    <div class="container d-flex gap-4 flex-wrap justify-content-center">
+      <div class="card text-center p-3 text-color" style="width: 18rem;">
+        <i class="fas fa-code card-img mb-4 display-1"></i>
+        <div class="card-body">
+          <h3 class="card-title">Front-End Development</h3>
+          <p class="card-text text-dark">Expert in HTML, CSS, and JavaScript to create responsive and interactive
+            websites.</p>
+        </div>
+      </div>
+      <div class="card text-center p-3 text-color" style="width: 18rem;">
+        <i class="fas fa-pencil-ruler card-img mb-4  display-1"></i>
+        <div class="card-body">
+          <h3 class="card-title">UI/UX Design</h3>
+          <p class="card-text text-dark">Designing user-friendly interfaces with a focus on enhancing user experience.
+          </p>
+        </div>
+      </div>
+      <div class="card text-center p-3 text-color" style="width: 18rem;">
+        <i class="fas fa-search card-img mb-4 display-1"></i>
+        <div class="card-body">
+          <h3 class="card-title">SEO Optimization</h3>
+          <p class="card-text text-dark">Optimizing websites to rank higher in search engines and enhance visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-fluid p-5 bg-dark" id="projects">
+    <h2 class="display-4 fw-bold text-color text-center p-5">projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card">
+          <a href="https://haitham-sharlie.github.io/software-company/">
+            <img src="codehub.webp" class="card-img" alt="Responsive Website Design for Software Company">
+          </a>
+          <div class="card-body">
+            <p class="card-title mt-2 mb-2">software company</p>
+            <strong class="card-text d-flex justify-content-between">
+              <span>front end</span>
+              <a href="https://haitham-sharlie.github.io/software-company/">More details</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/">
+            <img src="coffee-shop.webp" class="card-img" alt="Responsive Website Design for Modern Coffee Shop">
+          </a>
+          <div class="card-body">
+            <p class="card-title mt-2 mb-2">modern coffee shop</p>
+            <strong class="card-text d-flex justify-content-between">
+              <span>front end</span>
+              <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/" class="more-details">More details</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://haitham-sharlie.github.io/coffee-shop/">
+            <img src="classic-coffe.webp" class="card-img" alt="Responsive Website Design for Coffee Shop">
+          </a>
+          <div class="card-body">
+            <p class="card-title mt-2 mb-2">coffee shop</p>
+            <strong class="card-text d-flex justify-content-between">
+              <span>front end</span>
+              <a href="https://haitham-sharlie.github.io/coffee-shop/" class="more-details">More details</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://creatorweb.netlify.app/">
+            <img src="creators.webp" class="card-img" alt="Responsive Website Design for Digital Products Store">
+          </a>
+          <div class="card-body">
+            <p class="card-title mt-2 mb-2">Digital Products Store</p>
+            <strong class="card-text d-flex justify-content-between">
+              <span>front end</span>
+              <a href="https://creatorweb.netlify.app/" class="more-details">More details</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-fluid p-5" id="contacts">
+    <h2 class="display-4 fw-bold text-color text-center p-5">Let's work together</h2>
+    <div class="container d-flex gap-4 flex-wrap justify-content-center">
+      <div class="card text-center p-3 text-warning" style="width: 18rem;">
+        <svg class="card-img display-1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+ width="1.5em">
+          <path fill="currentColor" d="M8.25 42q-.95 0-1.6-.65Q6 40.7 6 39.75V33q0-.8.5-1.4.5-.6 1.25-.75l5.95-1.3q.65-.15 1.3.075.65.225 1.15.775l4.75 4.9q4.4-2.4 7.875-5.85 3.475-3.45 6.275-8.1l-5-5.05q-.4-.4-.525-.975T29.5 14.05l1.35-6.3q.15-.8.675-1.275Q32.05 6 32.75 6h7q.95 0 1.6.65.65.65.65 1.6 0 6.1-3 12.125T31.2 31.2Q26.4 36 20.375 39 14.35 42 8.25 42ZM32.5 14.5l4.05 4.1q1.25-3 1.85-5.325Q39 10.95 39 9h-5.35l-1.15 5.5ZM9 39q2.25-.1 4.65-.7 2.4-.6 4.45-1.55l-3.95-4.15L9 33.65V39Zm9.1-2.25ZM36.55 18.6Z" />
+        </svg>
+        <div class="card-body">
+          <h3 class="card-title">Phone</h3>
+          <p class="card-text fs-6 text-dark">+201019145264</p>
+        </div>
+      </div>
+      <div class="card text-center p-3 text-success" style="width: 18rem;">
+        <i class="fab fa-whatsapp card-img display-1"></i>
+        <div class="card-body">
+          <h3 class="card-title">whatsapp</h3>
+          <p class="card-text fs-6 text-dark">+201019145264</p>
+        </div>
+      </div>
+      <div class="card text-center p-3 text-danger" style="width: 18rem;">
+        <svg class="card-img  display-1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+ width="1.5em">
+          <path fill="currentColor" d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm34-26.25-16.2 10.6q-.2.1-.375.175-.175.075-.425.075t-.425-.075q-.175-.075-.375-.175L7 13.75V37h34ZM24 21.9 40.8 11H7.25ZM7 13.75v.35-1.975.025V11v1.15-.05 2-.35V37Z" />
+        </svg>
+        <div class="card-body">
+          <h3 class="card-title">Email</h3>
+          <p class="card-text fs-6 text-dark">haismnsf5@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="container-fluid bg-dark d-flex justify-content-between align-items-center p-3">
+    <p class="text-white fw-bold fs-5">Copyright @ <span class="text-color">Haitham Sharlie</span></p>
+    <div class="fs-4">
+      <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-white ms-2" target="_blank"></a>
+      <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-white ms-2"></a>
+      <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-white ms-2"></a>
+      <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="freelanceyard">
+        <img src="logo-no-text.png" alt="freelanceyard" width="30px">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
