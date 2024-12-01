@@ -43,18 +43,18 @@
       --mainColor: #2563EB;
       --color: #fff;
     }
-    
+
     body {
       font-family: 'Poppins', sans-serif;
       text-transform: capitalize;
     }
     
     .bg-color {
-      background-color: #2563EB ;
+      background-color: var(--mainColor) ;
     }
     
     .text-color {
-      color: #2563EB ;
+      color: var(--mainColor) ;
     }
     
     .nav-link {
@@ -167,10 +167,6 @@
       width: 1.3em;
     }
     
-    .col .card{
-      height: 100%;
-    }
-    
     .card {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -244,7 +240,7 @@
             <div class="dot dot-5"></div>
           </div>
         </div>
-        <button class="navbar-toggler bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -344,7 +340,7 @@
     <h2 class="display-4 fw-bold text-color text-center p-5">projects</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
       <div class="col">
-        <div class="card">
+        <div class="card h-100">
           <a href="https://haitham-sharlie.github.io/software-company/">
             <img src="codehub.webp" class="card-img" alt="Responsive Website Design for Software Company">
           </a>
@@ -358,7 +354,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card h-100">
           <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/">
             <img src="coffee-shop.webp" class="card-img" alt="Responsive Website Design for Modern Coffee Shop">
           </a>
@@ -366,13 +362,13 @@
             <p class="card-title mt-2 mb-2">modern coffee shop</p>
             <strong class="card-text d-flex justify-content-between">
               <span>front end</span>
-              <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/" class="more-details">More details</a>
+              <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/">More details</a>
             </strong>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card h-100">
           <a href="https://haitham-sharlie.github.io/coffee-shop/">
             <img src="classic-coffe.webp" class="card-img" alt="Responsive Website Design for Coffee Shop">
           </a>
@@ -380,13 +376,13 @@
             <p class="card-title mt-2 mb-2">coffee shop</p>
             <strong class="card-text d-flex justify-content-between">
               <span>front end</span>
-              <a href="https://haitham-sharlie.github.io/coffee-shop/" class="more-details">More details</a>
+              <a href="https://haitham-sharlie.github.io/coffee-shop/">More details</a>
             </strong>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card h-100">
           <a href="https://creatorweb.netlify.app/">
             <img src="creators.webp" class="card-img" alt="Responsive Website Design for Digital Products Store">
           </a>
@@ -394,11 +390,12 @@
             <p class="card-title mt-2 mb-2">Digital Products Store</p>
             <strong class="card-text d-flex justify-content-between">
               <span>front end</span>
-              <a href="https://creatorweb.netlify.app/" class="more-details">More details</a>
+              <a href="https://creatorweb.netlify.app/" >More details</a>
             </strong>
-          </div>
+          </strong>
         </div>
       </div>
+    </div>
     </div>
   </section>
   
