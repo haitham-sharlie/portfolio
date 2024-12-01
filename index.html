@@ -57,7 +57,7 @@
       color: #2563EB ;
     }
     
-    .navbar-nav .nav-link {
+    .nav-link {
       font-size: 1.2rem;
       color: var(--color);
       font-weight: 500;
@@ -65,9 +65,9 @@
       border-radius: 5px;
     }
     
-    .navbar-nav .nav-link:hover {
+    .nav-link:hover {
       background-color: var(--color);
-      color: var(--mainColor);
+      color: var(--mainColor) !important;
     }
     
     .logo {
@@ -163,6 +163,14 @@
       top: -2rem;
     }
     
+    .freelanceyard{
+      width: 1.3em;
+    }
+    
+    .col .card{
+      height: 100%;
+    }
+    
     .card {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -177,6 +185,42 @@
       height: 6rem;
     }
     
+    @media (max-width:575px){
+      html{
+        font-size: 12px;
+      }
+    }
+    
+    @media (min-width: 576px) {
+      html{
+        font-size: 14px;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      html{
+        font-size: 16px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      html{
+        font-size: 17px;
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      html{
+        font-size: 18px;
+      }
+    }
+    
+    @media (min-width: 1400px) {
+      html{
+        font-size: 20px;
+      }
+    }
+    
   </style>
   
 </head>
@@ -184,7 +228,7 @@
 <body style="padding-top:4.4rem;">
   <header>
     <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 z-3 bg-color">
-      <div class="container-fluid align-items-center">
+      <div class="container-fluid">
         <div class="logo navbar-brand">
           <div class="horizontal-line">
             <div class="vertical-line v-line-1"></div>
@@ -233,14 +277,22 @@
     <a href="#projects" class="btn btn-primary bg-color fs-6 fw-bold d-block p-2 mt-5" style="width:12rem" title="Explore my web development projects">Explore
       My Work</a>
     
-    <div class="mt-4 fs-3">
-      <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-black ms-2"></a>
-      <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-black ms-2"></a>
-      <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-black ms-2"></a>
-      <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="freelanceyard  ms-2">
-        <img src="logo-no-text.png" alt="freelanceyard" width="40px">
-      </a>
-    </div>
+    <ul class="d-flex align-items-center list-unstyled mt-4 fs-3">
+      <li class="ms-2">
+         <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-black" target="_blank"></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-black"></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-black"></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="icon-link">
+          <img class="freelanceyard" src="logo-no-text.png" alt="freelanceyard">
+        </a>
+      </li>
+    </ul>
   </section>
   
   <section class="container" id="about">
@@ -290,7 +342,7 @@
   
   <section class="container-fluid p-5 bg-dark" id="projects">
     <h2 class="display-4 fw-bold text-color text-center p-5">projects</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
       <div class="col">
         <div class="card">
           <a href="https://haitham-sharlie.github.io/software-company/">
@@ -381,16 +433,24 @@
     </div>
   </section>
   
-  <footer class="container-fluid bg-dark d-flex justify-content-between align-items-center p-3">
-    <p class="text-white fw-bold fs-5">Copyright @ <span class="text-color">Haitham Sharlie</span></p>
-    <div class="fs-4">
-      <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-white ms-2" target="_blank"></a>
-      <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-white ms-2"></a>
-      <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-white ms-2"></a>
-      <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="freelanceyard">
-        <img src="logo-no-text.png" alt="freelanceyard" width="30px">
-      </a>
-    </div>
+  <footer class="d-flex justify-content-between align-content-center bg-dark p-3 fs-5">
+    <p class="text-white fw-bold">Copyright @ <span class="text-color">Haitham Sharlie</span></p>
+    <ul class="d-flex align-items-center">
+      <li class="page-item ms-2">
+         <a href="https://www.linkedin.com/in/haitham-sharlie-880216240" class="fab fa-linkedin icon-link text-white" target="_blank"></a>
+      </li>
+      <li class="page-item ms-2">
+        <a href="https://github.com/haitham-sharlie" class="fab fa-github icon-link text-white"></a>
+      </li>
+      <li class="page-item ms-2">
+        <a href="https://www.upwork.com/freelancers/~01e4418b5be88bcde2?mp_source=share" class="fab fa-upwork icon-link text-white"></a>
+      </li>
+      <li class="page-item ms-2">
+        <a href="https://freelanceyard.com/en/freelancers/haitham-sharlie" class="icon-link">
+          <img class="freelanceyard" src="logo-no-text.png" alt="freelanceyard">
+        </a>
+      </li>
+    </ul>
   </footer>
 </body>
 
